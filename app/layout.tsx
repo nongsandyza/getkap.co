@@ -1,5 +1,6 @@
 import './global.css'
 import Analytics from './components/analytics.jsx';
+import LiffLoader from './components/LiffLoader.jsx';
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ["latin"] });
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
                 <link rel="mask-icon" href="/static/favicon/kap.svg" />
             </head>
             <body className={inter.className}>
+                <LiffLoader />
                 {children}
                 <Analytics />
             </body>
